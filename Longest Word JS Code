@@ -1,0 +1,15 @@
+function findLongestWord(str) {
+  
+  var myArr = str.split(/\s/);
+  
+  var longestWord = 0;
+ 
+  for (var i = 0; i < myArr.length; i++) {
+   if (myArr[i].length >= longestWord) {
+     longestWord = myArr[i].length;
+   }
+  }
+  return longestWord;
+}
+
+findLongestWord("What is the average airspeed velocity of an unladen swallow");
